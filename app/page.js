@@ -1,5 +1,5 @@
 import Navbar from "./components/Misc/Navbar";
-import OverlayNavbar from "./components/OverlayNavbar";
+import OverlayNavbar from "./components/Misc/OverlayNavbar";
 
 export default function Home() {
   return (
