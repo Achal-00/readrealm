@@ -1,4 +1,5 @@
 import Navbar from "./components/Misc/Navbar";
+import OverlayNavbar from "./components/Misc/OverlayNavbar";
 import "./globals.css";
 
 export const metadata = {
@@ -9,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-main-bg">{children}</body>
+      <body className="bg-main-bg relative font-body">
+        <Navbar />
+        {children}
+        <OverlayNavbar />
+      </body>
     </html>
   );
 }

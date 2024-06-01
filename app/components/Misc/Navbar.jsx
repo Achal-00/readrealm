@@ -27,10 +27,14 @@ export default function Navbar() {
   }, [menu]);
 
   return (
-    <div className="sticky top-0 left-0 z-50 lg:px-20 px-4 navbar">
+    <div className="sticky top-0 left-0 z-50 navbar lg:px-20 px-4">
       <div className="md:hidden flex justify-between items-center py-4">
         <div>
-          <img src="logo.svg" alt="logo" className="w-33 logo-icon block" />
+          <img
+            src="logo-only.svg"
+            alt="logo"
+            className="w-33 logo-icon block"
+          />
         </div>
         <button onClick={() => setMenu((menu) => !menu)} className="z-50">
           <img src="hamburger-icon.svg" alt="menu" className="w-8 menu-icon" />
