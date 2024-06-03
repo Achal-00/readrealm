@@ -14,6 +14,7 @@ module.exports = {
         "header-text": "#BFAC97",
         "light-gray": "#00000047",
         "cta-border": "#0C0C0C",
+        "marquee-bg": "#131313",
       },
       fontFamily: {
         header: ["Noto Serif", "serif"],
