@@ -15,6 +15,7 @@ module.exports = {
         "light-gray": "#00000047",
         "cta-border": "#0C0C0C",
         "marquee-bg": "#131313",
+        "best-selling-bg": "#9070596B",
       },
       fontFamily: {
         header: ["Noto Serif", "serif"],
