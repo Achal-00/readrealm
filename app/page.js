@@ -4,6 +4,7 @@ import HomeSection from "./components/HomeSection/HomeSection";
 import MarqueeSection from "./components/MarqueeSection/MarqueeSection";
 import OfferSection from "./components/OfferSection/OfferSection";
 import PopularSection from "./components/PopularSection/PopularSection";
+import QuoteSection from "./components/QuoteSection/QuoteSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <PopularSection />
       <BestSellingSection />
       <OfferSection />
+      <QuoteSection />
       <section className="min-h-screen">Next Section</section>
     </div>
   );
