@@ -40,7 +40,7 @@ export default function Navbar() {
           <img src="hamburger-icon.svg" alt="menu" className="w-8 menu-icon" />
         </button>
       </div>
-      <div className="hidden md:flex pt-12 pb-8 items-center justify-between">
+      <div className="hidden md:flex pt-6 pb-4 items-center justify-between">
         <div>
           <img src="logo.svg" alt="logo" className="w-33 logo-icon block" />
         </div>
