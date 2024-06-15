@@ -8,7 +8,7 @@ import QuoteSection from "./components/QuoteSection/QuoteSection";
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <HomeSection />
       <MarqueeSection />
       <BrowseSection />

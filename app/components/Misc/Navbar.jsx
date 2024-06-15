@@ -27,7 +27,7 @@ export default function Navbar() {
   }, [menu]);
 
   return (
-    <div className="sticky top-0 left-0 z-50 navbar lg:px-20 px-4">
+    <div className="sticky top-0 left-0 z-50 navbar lg:px-20 px-4 other-content">
       <div className="md:hidden flex justify-between items-center py-4">
         <div>
           <img

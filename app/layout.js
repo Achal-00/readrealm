@@ -1,6 +1,7 @@
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Misc/Navbar";
 import OverlayNavbar from "./components/Misc/OverlayNavbar";
+import PreLoader from "./components/Misc/PreLoader";
 import "./globals.css";
 
 export const metadata = {
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         {children}
         <OverlayNavbar />
         <Footer />
+        <PreLoader />
       </body>
     </html>
   );

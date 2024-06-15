@@ -1,6 +1,6 @@
 export default function ImagePart() {
   return (
-    <div className="self-end overflow-hidden flex flex-col">
+    <div className="self-end overflow-hidden flex flex-col other-content">
       <img
         src="hero-section-image.png"
         alt="hero image"
