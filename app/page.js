@@ -16,7 +16,6 @@ export default function Home() {
       <BestSellingSection />
       <OfferSection />
       <QuoteSection />
-      <section className="min-h-screen">Next Section</section>
     </div>
   );
 }

@@ -16,6 +16,7 @@ module.exports = {
         "cta-border": "#0C0C0C",
         "marquee-bg": "#131313",
         "best-selling-bg": "#9070596B",
+        "footer-bg": "#DCD2BD",
       },
       fontFamily: {
         header: ["Noto Serif", "serif"],
