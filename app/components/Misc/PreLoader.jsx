@@ -38,10 +38,10 @@ export default function PreLoader() {
 
   return (
     <div className="fixed top-0 left-0 z-50 bg-light-black w-[100dvw] h-[100dvh] grid preloader place-content-center cursor-wait">
-      <div class="w-full gap-x-2 flex justify-center items-center">
-        <div class="w-5 bg-header-text animate-pulse h-5 rounded-full"></div>
-        <div class="w-5 animate-pulse h-5 bg-main-bg rounded-full"></div>
-        <div class="w-5 h-5 animate-pulse bg-footer-bg rounded-full"></div>
+      <div className="w-full gap-x-2 flex justify-center items-center">
+        <div className="w-5 bg-header-text animate-pulse h-5 rounded-full"></div>
+        <div className="w-5 animate-pulse h-5 bg-main-bg rounded-full"></div>
+        <div className="w-5 h-5 animate-pulse bg-footer-bg rounded-full"></div>
       </div>
     </div>
   );
