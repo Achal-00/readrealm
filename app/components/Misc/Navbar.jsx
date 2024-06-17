@@ -2,6 +2,13 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Tween } from "gsap/gsap-core";
+
+const variants = {
+  open: { x: 0 },
+  closed: { x: "100%" },
+};
 
 export default function Navbar() {
   const [menu, setMenu] = useState(false);
@@ -11,18 +18,10 @@ export default function Navbar() {
       document
         .querySelector(".menu-icon")
         .setAttribute("src", "close-icon.svg");
-      document
-        .querySelector(".overlay-navbar")
-        .classList.replace("hidden", "block");
-      document.querySelector(".logo-icon").classList.replace("block", "hidden");
     } else {
       document
         .querySelector(".menu-icon")
         .setAttribute("src", "hamburger-icon.svg");
-      document
-        .querySelector(".overlay-navbar")
-        .classList.replace("block", "hidden");
-      document.querySelector(".logo-icon").classList.replace("hidden", "block");
     }
   }, [menu]);
 
@@ -40,6 +39,34 @@ export default function Navbar() {
           <img src="hamburger-icon.svg" alt="menu" className="w-8 menu-icon" />
         </button>
       </div>
+      <AnimatePresence>
+        {menu && (
+          <motion.div
+            className="absolute top-0 right-0 z-40 h-screen w-[80%] bg-light-black text-white grid content-center md:hidden text-center gap-8 py-4 mob-nav px-8"
+            initial="closed"
+            animate="open"
+            exit="closed"
+            variants={variants}
+            transition={{ type: Tween }}
+          >
+            <Link href="#" className="text-light-white text-xl">
+              Home
+            </Link>
+            <Link href="#" className="text-light-white text-xl">
+              Books
+            </Link>
+            <Link href="#" className="text-light-white text-xl">
+              Rent
+            </Link>
+            <Link href="#" className="text-light-white text-xl">
+              Community
+            </Link>
+            <button className="bg-white text-light-black text-lg rounded-full py-3">
+              Login
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
       <div className="hidden md:flex py-4 items-center justify-between">
         <div>
           <img src="logo.svg" alt="logo" className="w-33 logo-icon block" />
