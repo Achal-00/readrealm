@@ -40,5 +40,5 @@ Check out the live website [here](https://achal-00.github.io/readrealm/).
 For questions or feedbacks feel free to contact:
 
 - **Email:** achaldev3@gmail.com
-- **LinkedIn:** [Achal](https://www.linkedin.com/in/achal-ab39652b4/)
+- **LinkedIn:** [Achal](https://www.linkedin.com/in/-achal/)
 - **Designed by:** [Sanand](https://www.behance.net/sanandchandran)
